@@ -1,1 +1,69 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-navigations/styles/material.css";
+@import "../node_modules/@syncfusion/ej2-navigations/styles/material.css";
+
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-navigations/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-grids/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-treegrid/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-icons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-angular-popups/styles/material.css';
+
+
+html,
+body,
+#container {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+
+
+#loader {
+  color: #008cff;
+  height: 40px;
+  left: 45%;
+  position: absolute;
+  top: 45%;
+  width: 30%;
+}
+
+.e-toolbar.e-control[class*='e-toolbar'] {
+  box-sizing: content-box;
+  display: none;
+}
+
+.e-filterbar {
+  display: none;
+}
+
+input[name=TaskID] {
+  pointer-events: none;
+}
+
+.e-treegrid .e-rowcell.customcss {
+  background-color: #ecedee;
+  font-family: 'Bell MT';
+  color: 'red';
+  font-size: '20px';
+}
+
+.e-treegrid .e-headercell.customcss {
+  background-color: #2382c3;
+  color: white;
+  font-family: 'Bell MT';
+  font-size: '20px';
+}
+
+/* .e-treegrid td.e-active {
+  background-color: pink;
+} */
