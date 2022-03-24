@@ -13,6 +13,7 @@ import { ResizeService } from '@syncfusion/ej2-angular-treegrid';
 import { SharedService } from './treegrid/shared.service'
 import { Fields } from '@syncfusion/ej2-angular-dropdowns';
 import { ClipboardModule } from '@angular/cdk/clipboard';
+
 TreeGrid.Inject(Selection, ColumnChooser, Filter, Reorder, Resize, RowDD);
 @Component({
   selector: 'app-root',
@@ -20,6 +21,7 @@ TreeGrid.Inject(Selection, ColumnChooser, Filter, Reorder, Resize, RowDD);
   providers: [EditService, ResizeService, ToolbarService, PageService, FreezeService],
 })
 export class AppComponent implements OnInit {
+  title = 'Treegrid';
   constructor(private sharedService: SharedService) { }
   @ViewChild('treegrid')
   public treeGridObj!: TreeGridComponent;
@@ -35,7 +37,6 @@ export class AppComponent implements OnInit {
   public toolbar: String[] | undefined;
   public selectionOptions: SelectionSettingsModel | undefined;
   public columnName: Object[] | undefined;
-
   rowIndex: any;
   cellIndex: any;
   copyContent: any;
