@@ -10,10 +10,7 @@ import { SaveEventArgs } from "@syncfusion/ej2-grids";
 import { SelectionSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { CheckBox } from '@syncfusion/ej2-angular-buttons';
 import { ResizeService } from '@syncfusion/ej2-angular-treegrid';
-import { SharedService } from './treegrid/shared.service'
-import { Fields } from '@syncfusion/ej2-angular-dropdowns';
-import { ClipboardModule } from '@angular/cdk/clipboard';
-
+import { SharedService } from './treegrid/shared.service';
 TreeGrid.Inject(Selection, ColumnChooser, Filter, Reorder, Resize, RowDD);
 @Component({
   selector: 'app-root',
@@ -21,7 +18,7 @@ TreeGrid.Inject(Selection, ColumnChooser, Filter, Reorder, Resize, RowDD);
   providers: [EditService, ResizeService, ToolbarService, PageService, FreezeService],
 })
 export class AppComponent implements OnInit {
-  title = 'Treegrid';
+  title = 'AngularCRUD';
   constructor(private sharedService: SharedService) { }
   @ViewChild('treegrid')
   public treeGridObj!: TreeGridComponent;

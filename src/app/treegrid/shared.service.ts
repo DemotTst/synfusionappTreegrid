@@ -6,8 +6,10 @@ import { ITaskModel } from '../app.component';
 })
 export class SharedService {
   data!: ITaskModel;
-  readonly APIUrl = "https://node-y4weqs--3000.local.webcontainer.io/api/datalist";
+  readonly APIUrl = "http://localhost:3000/api/datalist";
   API_URL = '';
+  // https://node-y4weqs--3000.local.webcontainer.io/api/datalist
+  // http://localhost:3000/api/datalist
   constructor(private http: HttpClient) { }
   getAccountData() {
     return this.http.get(this.APIUrl);
